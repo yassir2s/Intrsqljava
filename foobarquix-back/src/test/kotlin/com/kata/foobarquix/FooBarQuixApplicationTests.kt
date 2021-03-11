@@ -50,13 +50,13 @@ class FooBarQuixApplicationTests {
     }
 
     @Test
-    fun should_return_Foo_if_contain_3_and_divisible_by_3() {
-        Assertions.assertEquals("Foo", service.convertNumber(93))
+    fun should_return_FooFoo_if_contain_3_and_divisible_by_3() {
+        Assertions.assertEquals("FooFoo", service.convertNumber(93))
     }
 
     @Test
-    fun should_return_Foo_if_contain_5_and_divisible_by_5() {
-        Assertions.assertEquals("Bar", service.convertNumber(125))
+    fun should_return_BarBar_if_contain_5_and_divisible_by_5() {
+        Assertions.assertEquals("BarBar", service.convertNumber(125))
     }
 
     @Test
@@ -81,7 +81,7 @@ class FooBarQuixApplicationTests {
 
     @Test
     fun should_return_Foo_if_9_is_input() {
-        Assertions.assertEquals("Quix", service.convertNumber(9))
+        Assertions.assertEquals("Foo", service.convertNumber(9))
     }
 
     @Test
@@ -106,7 +106,7 @@ class FooBarQuixApplicationTests {
 
     @Test
     fun should_return_FooBarBar_if_15_is_input() {
-        Assertions.assertEquals("FooFooFoo", service.convertNumber(15))
+        Assertions.assertEquals("FooBarBar", service.convertNumber(15))
     }
 
 
