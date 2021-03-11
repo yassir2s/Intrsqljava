@@ -1,3 +1,15 @@
-<div class="container"> 
-    To Be Completed
+<div class="container">
+  <div class="col-xs-12">
+      <div class="row">
+        <div class="col-sm-5 form-group">
+          <label for="name">Number to onvert</label>
+          <input type="text" id="name" type="number" class="form-control" [(ngModel)]="numberInput"/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <button class="btn btn-primary" type="button" (click)="submitNumber()">Convert</button>
+        </div>
+      </div>
+  </div>
 </div>

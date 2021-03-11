@@ -1,4 +1,5 @@
 export class TestCase {
-    input: number;
-    output: string;
+
+
+    constructor(public input: number, public output: string) {}
 }

@@ -1,4 +1,5 @@
 import { Component, EventEmitter, OnInit, Output } from '@angular/core';
+
 import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 
 @Component({
@@ -7,6 +8,9 @@ import { FormBuilder, FormGroup, Validators } from '@angular/forms';
 })
 export class FooBarQuixFormComponent implements OnInit {
 
+  @Output() submitNumberOutput = new EventEmitter<number>();
+
+  numberInput;
 
   constructor() {
 
@@ -16,6 +20,8 @@ export class FooBarQuixFormComponent implements OnInit {
   }
 
   submitNumber(): void {
+    this.submitNumberOutput.emit(this.numberInput);
+    this.numberInput = "";
   }
 
 }
